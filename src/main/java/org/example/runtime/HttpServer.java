@@ -28,7 +28,7 @@ public class HttpServer {
         // la llave sera el parth del webservice y el valor osn métodos
         //  Ojo todos los métodos serán estaticos
 
-        String pathGet = "/component/hellow";
+        String pathGet = "/components/hellow";
         String queryValue = "Miguel";
         Method m = componentes.get(pathGet.substring(11));
         if (m != null) {

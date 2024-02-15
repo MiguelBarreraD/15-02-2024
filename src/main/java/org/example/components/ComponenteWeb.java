@@ -8,6 +8,6 @@ public class ComponenteWeb {
 
      @GetMaping("/hellow")
      public static String hello(String a ){
-        return "hellow" + a;
+        return "Hellow World " + a;
     }
 }
