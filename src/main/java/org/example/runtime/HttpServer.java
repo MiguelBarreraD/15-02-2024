@@ -29,10 +29,11 @@ public class HttpServer {
         //  Ojo todos los métodos serán estaticos
 
         String pathGet = "/component/hellow";
-        Method m = componentes.get(pathGet.substring(10));
+        String queryValue = "Miguel";
+        Method m = componentes.get(pathGet.substring(11));
         if (m != null) {
             ///m.invoke(null);
-            System.out.println("Salida: " + m.invoke(null));
+            System.out.println("Salida: " + m.invoke(null,queryValue));
         }
 
         // 3. Si llega una ruta que está en lazada a un componente

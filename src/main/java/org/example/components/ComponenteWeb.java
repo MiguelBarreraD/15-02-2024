@@ -7,7 +7,7 @@ import org.example.runtime.GetMaping;
 public class ComponenteWeb {
 
      @GetMaping("/hellow")
-     public static String hello(){
-        return "hellow";
+     public static String hello(String a ){
+        return "hellow" + a;
     }
 }
